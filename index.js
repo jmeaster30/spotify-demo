@@ -210,6 +210,8 @@ function setup() {
   selectedModel.scale = desiredWidth / selectedModel.width;
   let cnv = createCanvas(selectedModel.width * selectedModel.scale, selectedModel.height * selectedModel.scale, WEBGL);
   cnv.parent('p5container')
+
+  document.getElementById('results').style.maxHeight = selectedModel.height * selectedModel.scale;
 }
 
 function draw() {
