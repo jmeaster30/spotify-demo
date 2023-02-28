@@ -2,8 +2,26 @@
   <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <p id="testing">We are testing :)</p>
+    <div class="row">
+      <div class="column">
+        <input id="imageFilename" type="text" placeholder="Set filename for image"></select>
+        <button id="saveImageButton" type="button">Save Image</button>
+      </div>
+      <div class="column">
+        <select id="locations"></select>
+        <input id="searchText" type="text" placeholder="Search album name or artist..."></input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div id="p5container"></div>
+      </div>
+      <div class="column">
+        <div id="results"></div>
+      </div>
+    </div>
   </body>
 </html>

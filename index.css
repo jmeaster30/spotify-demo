@@ -1,0 +1,46 @@
+.row {
+  display: flex;
+}
+
+.column {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  flex: 50%;
+}
+
+#results {
+  overflow: auto;
+}
+
+#floatRight {
+  float: right;
+}
+
+.resultEntry {
+  max-width: 90%;
+  margin-bottom: 24px;
+  padding: 8px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 16px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.resultTitle {
+  font-weight: bolder;
+  font-size: 24px;
+  padding: 4px;
+}
+
+.resultArtists {
+  padding: 4px;
+}
+
+.resultArtist {
+  margin: 8px;
+  padding: 4px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
