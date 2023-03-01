@@ -211,11 +211,12 @@ function setup() {
   let cnv = createCanvas(selectedModel.width * selectedModel.scale, selectedModel.height * selectedModel.scale, WEBGL);
   cnv.parent('p5container')
 
+  colorMode(HSB, 255);
   document.getElementById('results').style.maxHeight = selectedModel.height * selectedModel.scale;
 }
 
 function draw() {
-  background(0);
+  background((noise(frameCount * 0.005) * 512) % 255, 255, 255);
   translate(-width / 2, -height / 2);
   for (let i = 0; i < selectedModel.boundaries.length; i++) {
     let boundaryName = selectedModel.boundaries[i].name
